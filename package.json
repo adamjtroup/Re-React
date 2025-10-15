@@ -1,0 +1,18 @@
+{
+  "name": "rereact",
+  "version": "1.0.0",
+  "description": "A recreation of React.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "test"
+  },
+  "author": "adamjtroup@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "typescript": "^5.9.3"
+  }
+}
