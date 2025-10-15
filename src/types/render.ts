@@ -6,6 +6,7 @@ export type Fiber = {
   sibling: Fiber | null;
   parent: Fiber | null;
   dom: HTMLElement | Text | null;
+  alternate: Fiber | null;
   effectTag?: "PLACEMENT" | "UPDATE" | "DELETION";
 }
 
@@ -20,6 +21,7 @@ export const emptyFiber: Fiber = {
   sibling: null,
   parent: null,
   dom: null,
+  alternate: null,
   effectTag: undefined,
 };
 
@@ -31,5 +33,6 @@ export const createFiber = (type: string, props: any, parent: Fiber | null): Fib
   child: null,
   sibling: null,
   state: null,
+  alternate: null,
   effectTag: undefined,
 });
